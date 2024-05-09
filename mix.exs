@@ -4,7 +4,7 @@ defmodule PhoenixLiveReact.MixProject do
   def project do
     [
       app: :phoenix_live_react,
-      version: "0.4.2",
+      version: "0.4.3",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       package: package(),
@@ -23,7 +23,8 @@ defmodule PhoenixLiveReact.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
-      {:phoenix_html, "~> 2.11 or ~> 3.0"},
+      {:phoenix_html, "~> 4.1"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:jason, "~> 1.1"}
     ]
   end
